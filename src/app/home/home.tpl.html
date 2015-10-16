@@ -1,0 +1,8 @@
+<div masonry='{ "transitionDuration":"0.4s", "itemSelector":".tile", "columnWidth":1 }'>
+  <!-- items -->
+  <div masonry-tile ng-repeat="item in items" class="tile">
+    <div ng-style="{ 'background-color': item.bgc, 'width': item.w, 'height': item.h}">
+      {{ item.text + ', ' + item.w }}
+    </div>
+  </div>
+</div>
